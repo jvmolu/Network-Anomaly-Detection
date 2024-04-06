@@ -2,6 +2,8 @@
 
 Welcome to the Network Anomaly Detection project! 🌐🛡️
 
+![image](https://github.com/jvmolu/Network-Anomaly-Detection/assets/44413960/ce9de652-227b-4a0f-9563-03e97ef532de)
+
 ## Overview
 This project leverages advanced supervised and unsupervised learning techniques, coupled with meticulous feature selection and model experimentation, to achieve an outstanding 99.7% accuracy in detecting network anomalies.
 
