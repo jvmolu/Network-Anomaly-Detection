@@ -1,6 +1,6 @@
 import numpy as np
 
-def generate_data(num_nodes, average_bytes_per_edge, count):
+def generate_data(num_nodes, average_bytes_per_edge, count, multiplier=3):
     
     num_edges = num_nodes * (num_nodes - 1) / 2
     data = []
@@ -15,12 +15,11 @@ def generate_data(num_nodes, average_bytes_per_edge, count):
         if np.random.uniform(0, 1) < 0.95:
             for i in range(int(num_edges)):
                 sample_noise = np.random.normal(0, 1)
-                row_data.append(average_bytes_per_edge + average_bytes_per_edge*sample_noise)
+                row_data.append(max(average_bytes_per_edge + average_bytes_per_edge*sample_noise, 0))
         else:
             # Anomalies
             for i in range(int(num_edges)):
-                sample_noise = np.random.normal(0, 1)
-                row_data.append(average_bytes_per_edge + average_bytes_per_edge*sample_noise + np.random.uniform(0, 1)*3)
+                row_data.append(3*average_bytes_per_edge + np.random.uniform(1, 2)*multiplier)
 
         data.append(row_data)
         
