@@ -15,7 +15,7 @@ This project leverages advanced supervised and unsupervised learning techniques,
 
 **Feature Selection Techniques:** Meticulous selection methods to enhance model performance.
 
-**Stunning Data Visualizations:** Beautiful visualizations using synthetic network traffic data for insightful analysis. 📊💻
+**Data Visualizations:** Beautiful visualizations using synthetic network traffic data for insightful analysis 📊💻.
 
 ## How to Use
 
